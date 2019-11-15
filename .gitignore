@@ -1,0 +1,12 @@
+# A /* ensures that everything will be ignored.
+/*
+
+# Now include files and/or directories
+!.gitignore
+
+
+
+
+#!doc
+#!doc/*
+
