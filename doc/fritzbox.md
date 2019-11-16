@@ -50,6 +50,7 @@ Damit der Raspberry Pi von außen erreichbar wird, müssen die gewünschten Port
 | vnc           | 5900          | ändern z.B. 53023
 
 Eine genaue Beschreibung zur Portfreigabe von **avm** findet sich [hier](https://avm.de/service/fritzbox/fritzbox-7390/wissensdatenbank/publication/show/893_Statische-Portfreigaben-einrichten/):  
+
 <img src="images/ssh-portfreigabe.jpg" width="500">
 
 Nachdem die Freigabe z.B. für Port 22 aktiviert wurde, ist der Raspberry Pi nun per SSH auch von außen über den dynDNS-Name erreichbar:  
