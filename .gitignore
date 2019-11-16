@@ -28,8 +28,8 @@
 docker/*
 
 # letsencrypt
-#!docker/letsencrypt
-#docker/letsencrypt/*
+!docker/letsencrypt
+docker/letsencrypt/*
 #!docker/letsencrypt/config
 #docker/letsencrypt/config/*
 #!docker/letsencrypt/config/www
