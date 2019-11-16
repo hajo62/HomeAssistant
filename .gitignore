@@ -4,7 +4,9 @@
 # Now include files and/or directories
 !.gitignore
 
+##############################
 # Documentation
+##############################
 !LICENSE
 !doc
 !doc/HA_installation.md
@@ -12,14 +14,18 @@
 !doc/fritzbox.md
 !doc/security.md
 
-!docker
-
+# All images
 !images
-!images/*
 
 # Old "pre docker" documentation
 !doc/old
 !doc/old/*
+
+##############################
+# RPi Files
+##############################
+!docker
+docker/*
 
 # And last but not least forget unwanted files
 **.DS_Store
