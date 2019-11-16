@@ -87,3 +87,16 @@
 2019-11-10 12:28:25,900 fail2ban.jail           [345]: INFO    Jail 'nginx-http-auth' started
 2019-11-10 12:28:25,906 fail2ban.jail           [345]: INFO    Jail 'nginx-botsearch' started
 2019-11-10 12:28:25,914 fail2ban.jail           [345]: INFO    Jail 'nginx-badbots' started
+2019-11-16 22:48:44,744 fail2ban.server         [345]: INFO    Shutdown in progress...
+2019-11-16 22:48:44,890 fail2ban.server         [345]: INFO    Stopping all jails
+2019-11-16 22:48:44,925 fail2ban.filter         [345]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-11-16 22:48:44,939 fail2ban.filter         [345]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-11-16 22:48:44,942 fail2ban.filter         [345]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-11-16 22:48:44,960 fail2ban.actions        [345]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
+2019-11-16 22:48:44,966 fail2ban.actions        [345]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
+2019-11-16 22:48:44,968 fail2ban.actions        [345]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
+2019-11-16 22:48:44,974 fail2ban.jail           [345]: INFO    Jail 'nginx-http-auth' stopped
+2019-11-16 22:48:45,076 fail2ban.jail           [345]: INFO    Jail 'nginx-botsearch' stopped
+2019-11-16 22:48:45,078 fail2ban.jail           [345]: INFO    Jail 'nginx-badbots' stopped
+2019-11-16 22:48:45,116 fail2ban.database       [345]: INFO    Connection to database closed.
+2019-11-16 22:48:45,244 fail2ban.server         [345]: INFO    Exiting Fail2ban
