@@ -29,7 +29,9 @@ Nach dem Refresh der github-Seite sollte nun ausschließlich die Datei `.gitigno
 
 ### Clonen
 
-Um das Repository auf den Laptop zu clonen, wechselt man in das Verzeichnis, in dem der neue Projekt-Ordner geclont werden soll. Dort dann einfach das Kommando `git clone https://github.com/hajo62/HomeAssistant.git` ausführen. Hierdurch wird das Verzeichnis HomeAssistant angelegt und mit dem Inhalt aus github gefüllt.  
+Um das Repository auf den Laptop zu clonen, wechselt man in das Verzeichnis, in dem der neue Projekt-Ordner geclont werden soll. Dort dann einfach das folgende Kommando ausführen:  
+`git clone https://github.com/hajo62/HomeAssistant.git`  
+Hierdurch wird das Verzeichnis HomeAssistant angelegt und mit dem Inhalt aus github gefüllt.  
 
 ### Auf dem Laptop bearbeiten
 
