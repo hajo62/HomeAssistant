@@ -1,4 +1,5 @@
 &#x1F534; **Abgelöst durch docker** &#x1F534;  
+[Aktuelle Beschreibung](..//../docker/nginx.md)  
 
 ## nginx installieren
 Der Webserver [nginx](https://de.wikipedia.org/wiki/Nginx) kann u.a. auch als [Reverse-Proxy](https://de.wikipedia.org/wiki/Reverse_Proxy) zur Erhöhung der Sicherheit eingesetzt werden. Eine Beschreibung zur Installation findet sich z.B. [hier](https://howtoraspberrypi.com/install-nginx-raspbian-and-accelerate-your-raspberry-web-server).  
