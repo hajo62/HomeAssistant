@@ -9,11 +9,12 @@
 !doc
 !doc/HA_installation.md
 !doc/HowTo_git.md
+!doc/fritzbox.md
 
 !docker
 
-!images4git
-!images4git/*
+!images
+!images/*
 
 # Old "pre docker" documentation
 !doc/old
