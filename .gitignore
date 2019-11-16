@@ -30,7 +30,7 @@ docker/*
 # letsencrypt
 !docker/letsencrypt/config
 docker/letsencrypt/config/*
-!docker/letsencrypt/config/www
+!docker/letsencrypt/config/www/*
 
 
 
