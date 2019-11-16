@@ -3,12 +3,16 @@
 
 # Now include files and/or directories
 !.gitignore
+
 # Documentation
 !LICENSE
 !doc
 !doc/HA_installation.md
-
 !doc/HowTo_git.md
+
+!images4git
+!images4git/*
+
 # Old "pre docker" documentation
 !doc/old
 !doc/old/*
