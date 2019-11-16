@@ -36,14 +36,14 @@ Hierdurch wird das Verzeichnis HomeAssistant angelegt und mit dem Inhalt aus git
 ### Auf dem Laptop bearbeiten
 
 * Eine neue Datei in einem neuen Verzeichnis (z.B. `doc/HowTo_git.md`) anlegen.  
-*  Die Datei .gitignore anpassen, so dass die neuen Dateien dem Repository hinzugefügt werden. Dazu folgende Zeilen ergänzen:  
+*  Die Datei `.gitignore` anpassen, so dass die neuen Dateien dem Repository hinzugefügt werden. Dazu folgende Zeilen ergänzen:  
 
 ```
 !doc
 !doc/HowTo_git.md
 ```
 
-* Änderungen ins git-Repository übertragen (_committen_):
+* Mit folgenden Kommandos die Änderungen ins git-Repository übertragen (_committen_):
 
 ```
 # Geänderte Dateien hinzufügen
@@ -66,7 +66,11 @@ Wenn ausschließlich auf dem Laptop geändert wurde, genügt das Kommando `git p
 
 ---
 
-Under Construction
+---
+
+---
+
+# **Under Construction**
 
 
 
