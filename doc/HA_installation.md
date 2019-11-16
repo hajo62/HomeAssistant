@@ -36,10 +36,16 @@ Um nach dem booten oder nach einem Fehler HA automatisch neu zu starten, bietet 
   services:
     homeassistant:
       container_name: home-assistant
-      image: homeassistant/raspberrypi3-homeassistant
+      image: homeassistant/raspberrypi3-homeassistant:stable
+      depends_on:
+        - mqtt
       volumes:
-        - /home/pi/homeassistant:/config
+        - /home/pi/docker/homeassistant:/config
         - /etc/localtime:/etc/localtime:ro
+      expose:
+        - "8123"
+      ports:
+        - "8123:8123"
       restart: unless-stopped
       network_mode: host
 ```
