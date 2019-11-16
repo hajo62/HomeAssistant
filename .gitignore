@@ -9,4 +9,6 @@
 !doc
 
 !doc/HowTo_git.md
-
+# Old "pre docker" documentation
+!doc/old
+!doc/old/*
