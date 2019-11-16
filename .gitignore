@@ -12,3 +12,5 @@
 # Old "pre docker" documentation
 !doc/old
 !doc/old/*
+
+**.DS_Store
