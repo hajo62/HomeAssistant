@@ -3,14 +3,15 @@
 
 # Now include files and/or directories
 !.gitignore
-
 # Documentation
 !LICENSE
 !doc
+!doc/HA_installation.md
 
 !doc/HowTo_git.md
 # Old "pre docker" documentation
 !doc/old
 !doc/old/*
 
+# And last but not least forget unwanted files
 **.DS_Store
