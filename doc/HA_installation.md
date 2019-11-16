@@ -26,7 +26,7 @@ docker run --init -d --name="home-assistant" -v /home/pi/homeassistant:/config -
 ```
 
 Nach kurzer Zeit ist Home Assistant unter `http://192.168.178.111:8123` erreichbar.  
-<img src="images4git/HA_just_installed.jpg" width="300">
+<img src="images/HA_just_installed.jpg" width="300">
 
 ### docker-compose
 Um nach dem booten oder nach einem Fehler HA automatisch neu zu starten, bietet sich der Start über docker-compose an. Dazu wird die Datei `/home/pi/docker-compose.yml` mit folgendem Inhalt angelegt:  
