@@ -1,0 +1,1 @@
+2019/11/15 06:39:23 [error] 364#364: *13443 connect() failed (111: Connection refused) while connecting to upstream, client: 77.247.108.77, server: hajo62.duckdns.org, request: "GET /admin/config.php HTTP/1.1", upstream: "fastcgi://192.168.178.112:9000", host: "89.247.152.49"

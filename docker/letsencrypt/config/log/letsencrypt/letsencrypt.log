@@ -1,0 +1,133 @@
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Sun Nov 10 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Mon Nov 11 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Tue Nov 12 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Wed Nov 13 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Thu Nov 14 02:08:01 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Fri Nov 15 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<------------------------------------------------->
+
+<------------------------------------------------->
+cronjob running on Sat Nov 16 02:08:00 CET 2019
+Running certbot renew
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/hajo62.duckdns.org.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The following certs are not due for renewal yet:
+  /etc/letsencrypt/live/hajo62.duckdns.org/fullchain.pem expires on 2020-02-05 (skipped)
+No renewals were attempted.
+No hooks were run.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
