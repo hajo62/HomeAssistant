@@ -58,4 +58,6 @@ Nachdem die Freigabe z.B. für Port 22 aktiviert wurde, ist der Raspberry Pi nun
 
 ---
 
+Spätestens jetzt sollte man sich ein wenig um die [Sicherheit](security.md) kümmern.  
+
 Nun wird [nginx](./nginx.md) installiert und als Reverse Proxy konfiguriert.
