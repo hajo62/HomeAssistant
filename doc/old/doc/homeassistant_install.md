@@ -226,11 +226,12 @@ Wie im Kapitel [Backup](./backup.md) beschrieben, erstelle ich nun noch ein weit
 
 ## Update auf python 3.7
 
+```
 wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
 tar xJf Python-3.7.3.tar.xz
 cd Python-3.7.3
 ./configure
-   oder
+#   oder
 ./configure --enable-shared --enable-loadable-sqlite-extensions
 make
 sudo make install
@@ -241,5 +242,7 @@ sudo -u homeassistant -H -s
 source /srv/homeassistant/bin/activate
 pip3 install --upgrade homeassistant
 
- 1562  sudo systemctl restart home-assistant@homeassistant
- 1563  python3
+# Aus History
+ sudo systemctl restart home-assistant@homeassistant
+ python3
+```
