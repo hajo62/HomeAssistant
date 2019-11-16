@@ -27,5 +27,12 @@
 !docker
 docker/*
 
+# letsencrypt
+!docker/letsencrypt/config
+docker/letsencrypt/config/*
+!docker/letsencrypt/config/www
+
+
+
 # And last but not least forget unwanted files
 **.DS_Store
