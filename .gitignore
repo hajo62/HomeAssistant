@@ -4,9 +4,8 @@
 # Now include files and/or directories
 !.gitignore
 
+!doc
 
 
-
-#!doc
-#!doc/*
+!doc/HowTo_git.md
 
