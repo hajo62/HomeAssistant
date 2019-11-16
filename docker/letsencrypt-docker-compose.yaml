@@ -1,0 +1,24 @@
+  version: '3'
+  services:
+
+    letsencrypt:
+      image: linuxserver/letsencrypt
+      container_name: letsencrypt
+      restart: unless-stopped
+      cap_add:
+      - NET_ADMIN
+      volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /home/pi/docker/letsencrypt/config:/config
+      environment:
+      - PGID=1000
+      - PUID=1000
+      - EMAIL=<my eMail>
+      - URL=<myDNS>.duckdns.org
+      - SUBDOMAINS=wildcard
+      - VALIDATION=duckdns
+      - DUCKDNSTOKEN=<my DUCKDNS TOKEN>
+      - TZ=Europe/Berlin
+      ports:
+      - "80:80"
+      - "443:443"

@@ -10,6 +10,8 @@
 !doc/HA_installation.md
 !doc/HowTo_git.md
 
+!docker
+
 !images4git
 !images4git/*
 
