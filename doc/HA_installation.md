@@ -1,6 +1,6 @@
 # Home Assistant
 
-> [Hier](./doc/old/doc/homeassistant_install.md) steht die alte Beschreibung meiner manuellen Installation vor dem Umstieg auf Docker.
+> [Hier](old/doc/homeassistant_install.md) steht die alte Beschreibung meiner manuellen Installation vor dem Umstieg auf Docker.
 
 ## Installation mit docker
 
