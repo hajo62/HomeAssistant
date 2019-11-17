@@ -1,8 +1,17 @@
 # A /* ensures that everything will be ignored.
 /*
 
+##############################
+# gitsecret-Section
+##############################
+.gitsecret/keys/random_seed
+docker/letsencrypt/config/nginx/site-confs/default
+
+##############################
 # Now include files and/or directories
+##############################
 !.gitignore
+!.gitsecret
 
 ##############################
 # Documentation
@@ -38,3 +47,4 @@ docker/letsencrypt/config/*
 
 # And last but not least forget unwanted files
 **.DS_Store
+
