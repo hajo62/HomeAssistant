@@ -1,11 +1,6 @@
 # A /* ensures that everything will be ignored.
 /*
 
-##############################
-# gitsecret-Section
-##############################
-.gitsecret/keys/random_seed
-docker/letsencrypt/config/nginx/site-confs/default
 
 ##############################
 # Now include files and/or directories
@@ -42,7 +37,19 @@ docker/letsencrypt/*
 !docker/letsencrypt/config
 docker/letsencrypt/config/*
 !docker/letsencrypt/config/www
+!docker/letsencrypt/config/nginx
+docker/letsencrypt/config/nginx/*
+!docker/letsencrypt/config/nginx/site-confs
+docker/letsencrypt/config/nginx/site-confs/*
 
+
+
+##############################
+# gitsecret-Section
+##############################
+.gitsecret/keys/random_seed
+docker/letsencrypt/config/nginx/site-confs/default
+!docker/letsencrypt/config/nginx/site-confs/default.secret
 
 
 # And last but not least forget unwanted files
