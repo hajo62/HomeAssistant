@@ -4,6 +4,7 @@ Ich habe mich entschlossen, gelegentlich eine komplette Sicherung der SD-Karte m
 
 ## Erstellen eines Shares auf meinem NAS
 
+| --- | --- |   
 | ~~Auf meinem Western Digital NAS habe ich in Anlehnung an [diese Beschreibung](https://trendblog.net/how-to-mount-your-media-server-or-nas-drive-to-a-raspberry-pi/) einen Share nur für die Backups des Raspberry Pi eingerichtet.~~ Die Freigabe wurde vom NAS bei jedem Neustart wieder entfernt.        | <img src="https://static.slickdealscdn.com/attachment/1/3/0/7/2/4/5/5/6810047.attach" width="150">           |
 
 
