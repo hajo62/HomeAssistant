@@ -9,7 +9,7 @@ Ich habe mich entschlossen, gelegentlich eine komplette Sicherung der SD-Karte m
 ~~Auf meinem Western Digital NAS habe ich in Anlehnung an [diese Beschreibung](https://trendblog.net/how-to-mount-your-media-server-or-nas-drive-to-a-raspberry-pi/) einen Share nur für die Backups des Raspberry Pi eingerichtet.~~ Die Freigabe wurde vom NAS bei jedem Neustart wieder entfernt.
 
 Über die WebGUI unter **Freigaben** wählt man den gewünschten Share an, aktiviert **NFS-Zugriff** und konfiguriert die Freigabe wie gewünscht. In meinem Fall wird bei IP z.B. **192.168.178.0/24** eingegeben, um den Share im ganzen Heimnetz - aber auch nur von da - zugreifen zu können.  
-<img src="images/backup-wd-share.png" width="400"><img src="images/backup-wd-share-settings.png" width="300">
+<img src="images/backup-wd-share.png" width="500">
 
 ### Mounten des Shares auf dem RPi
 
