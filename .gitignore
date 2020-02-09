@@ -13,10 +13,12 @@
 ##############################
 !LICENSE
 !doc
+!doc/backup.md
 !doc/HA_installation.md
 !doc/HowTo_git.md
 !doc/fritzbox.md
 !doc/security.md
+!doc/sensors/xiaomi_bt_temp_humidity.md
 
 # All images
 !images

@@ -63,22 +63,36 @@ git push
 
 Wenn ausschließlich auf dem Laptop geändert wurde, genügt das Kommando `git pull`, um die Änderungen von github auf den RPi zu übertragen.
 
-
 ---
-
----
-
----
-
-# **Under Construction**
-
-
 
 ## git-secret
 
-Siehe [hier](https://git-secret.io/installation).  
+Eine Beschreibung findet sich [hier](https://git-secret.io/installation). 
 
-### Installation
+### Erstellen eine RSA-Schlüsselpaar
+
+Für die Verschlüsselung wird ein RSA-Key benötigt, der mit der eigenen eMail _verknüpft_ist. Erstellen kann man disen mit:
+
+```
+gpg --full-generate-key
+  > Select (1) RSA and RSA (default)
+  > keysize: 4096
+  > valid for: 0 = key does not expire
+  > Real name: Hans Joachim Pross
+  > Email address: hajo62@gmail.com
+  > Comment: For gitsecret 
+```
+
+Nun noch ein langes Passwort eingeben und das Schlüsselpaar wird erzeugt.
+
+> Anmerkung: Hatte im zweiten Versuch folgende Fehlermeldung:  
+gpg: agent_genkey failed: No such file or directory  
+Key generation failed: No such file or directory  
+Abhilfe hat geschaffen:  
+mkdir -p ~/.gnupg/private-keys-v1.d
+chmod 700 ~/.gnupg/private-keys-v1.d
+
+### Installation von gitsecret
 #### RaspberryPi
 
 ```
@@ -92,3 +106,57 @@ sudo apt-get update && sudo apt-get install git-secret
 ```
 brew install git-secret
 ```
+
+### Nutzung
+
+#### Initialisierung
+
+Das Verzeichnis `.gitsecret` darf nicht in der Datei `.gitignore` ausgeschlossen sein.  
+
+```
+git secret init
+```
+Hierbei wird der Eintrag `.gitsecret/keys/random_seed` in die Datei `.gitignore` eingetragen.  
+
+Als nächstes fügt man sich selbst als User hinzu:
+
+```
+git secret tell hajo62@gmail.com
+```
+
+git secret add  docker/letsencrypt/config/nginx//site-confs/default  
+git status  
+git add .  
+git status  
+git secret hide  
+git commit -m "nginx"  
+git push  
+history  
+
+#### Public- uns Secret-Key Dateien für Laptop erstellen
+
+Mit dem Kommando `gpg --output` wird der Public Key (auf dem RPi) in eine Datei geschrieben und diese anschließend z.B. mit `scp` auf den Laptop übertragen. Um den Public Key exportieren zu können, muss man ein Kennzeichen des Key - z.B. die ID oder die eMail-Adresse - angeben:  
+```
+gpg --output gitpublic.gpg --export <eMail>
+gpg --output gitsecret.gpg --export-secret-keys <eMail>
+```
+
+Nach der Übertragung werden die Keys importiert und dem gitrepo bekannt gemacht:  
+```
+# Import Keys
+gpg --import /tmp/gitpublic.gpg
+gpg --import /tmp/gitsecret.gpg
+# Add to git secrets repo
+git secret tell <eMail>
+```
+
+#### Dateien entschlüsseln
+
+```
+ git secret reveal
+```
+
+Nun fehlt noch, dies zu vereinfachen.
+hooks, damit man Änderungen an verschlüsselten Dateien auch überträgt
+Kennwort für gitsecret hinterlegen.
+Auf dem Rapsi noch das github-Kennwort hinterlegen.
