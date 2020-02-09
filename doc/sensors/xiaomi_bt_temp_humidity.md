@@ -1,6 +1,6 @@
 # Xiaomi Mijia BT Hygrothermo - Temperatur- und Luftfeuchtigkeitssensor
 
-<img src="../../images4git/sensors/xiaomi-mijia-sensor.jpeg" width="300" border="1">  
+<img src="../images/sensors/xiaomi-mijia-sensor.jpeg" width="300" border="1">  
 
 Die Beschreibung der Sensor-Platform findet sich [hier](https://www.home-assistant.io/components/mitemp_bt/).  
 Und [hier](https://github.com/dolezsa/Xiaomi_Hygrothermo) gibt es die benötigte `sensor.py`-Datei. Diese kopiert man z.B. mit curl in das Verzeichnis `/home/pi/homeassistant/custom_components/xiaomi_hygrothermo`.  
@@ -30,7 +30,7 @@ Anschließend muss man den Sensor noch bekannt machen, indem man in die Datei `s
 ```
 
 Nach dem Restart erscheinen die Sensoren:  
-<img src="../../images4git/sensors/xiaomi_mijia_temp_humidity.jpg" width="300" border="1">
+<img src="../images/sensors/xiaomi_mijia_temp_humidity.jpg" width="300" border="1">
 
 ## Unregelmäßiger Verbindungsabbruch
 
