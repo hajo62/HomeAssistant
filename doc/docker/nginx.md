@@ -1,6 +1,6 @@
 # nginx und letsencrypt
 
-Das eigene Heim-Netzwerk muss von *aussen* über IPv4 erreichbar sein ([Vorarbeiten](./fritzbox.md)).  
+Das eigene Heim-Netzwerk muss von *aussen* über IPv4 erreichbar sein ([Vorarbeiten](../fritzbox.md)).  
 
 Eine Beschreibung zur Installation eines nginx-Docker-Container findet sich z.B.  [hier](https://blog.docker.com/2015/04/tips-for-deploying-nginx-official-image-with-docker); hier hatte ich aber Probleme mit der Konfiguration und mit LetsEncrypt. Eine deutlich einfachere Lösung ist die Nutzung eines Containers, der bereits **nginx** und **LetsEncrypt** enthält.  
 
