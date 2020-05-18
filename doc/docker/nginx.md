@@ -6,8 +6,11 @@ Eine Beschreibung zur Installation eines nginx-Docker-Container findet sich z.B.
 
 ## Installation des docker-containers mit nginx und letsencrypt
  
-Ich habe [diesen](https://github.com/linuxserver/docker-letsencrypt) Container verwendet.  
-Erst später habe [diesen](https://github.com/linuxserver/docker-letsencrypt-armhf) Container für speziell RPi gefunden. Da das Vorgehen mit dem ersten Container nach [dieser](https://community.home-assistant.io/t/nginx-reverse-proxy-set-up-guide-docker) Beschreibung aber gut funktioniert hat, bin ich dabei geblieben.  
+ https://letsencrypt.org/de/
+ 
+Ich habe [diesen](https://github.com/linuxserver/docker-letsencrypt) Container verwendet und nach [dieser](https://community.home-assistant.io/t/nginx-reverse-proxy-set-up-guide-docker) Beschreibung vorgegangen.
+
+WICHTIG: homeassistant darf nicht `network_mode: host`in `docker-compose.yaml`-Datei haben; dann scheint der letsencrypt-Container nicht an den HA-Container ran zu kommen...
 
 Nachfolgende `docker-compose.yaml`-Datei configuriert und startet den Container.  
 

@@ -43,3 +43,9 @@ docker up zigbee2mqtt
 ```
 
 Ob das Löschen tatsächlich notwenig ist, weiß ich nicht...
+
+
+Ein Image Tag löschen: 
+`docker rmi koenkk/zigbee2mqtt:1.6.0`  
+Ein Image löschen:
+`docker rmi e9d93650f7ce`

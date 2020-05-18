@@ -35,3 +35,10 @@ Hier nun die Datei `sensors.yaml`:
           {% set state = states('sensor.rheinpegel_object') | from_json %}
           {{ state.get('trend', 'unknown') }}
 ```
+
+# Benzinpreise
+
+https://github.com/panbachi/homeassistant-tankerkoenig
+https://github.com/panbachi/tankerkoenig-card
+https://www.brandeps.com/
+https://creativecommons.tankerkoenig.de/TankstellenFinder/index.html

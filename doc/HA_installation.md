@@ -50,15 +50,23 @@ Um nach dem booten oder nach einem Fehler HA automatisch neu zu starten, bietet 
       network_mode: host
 ```
 
-Mit `docker-compose up -d` wird nun der Container gestartet, bzw. wenn er noch nicht da ist, herunter geladen.  
-Neustart von HomeAssistant erfolgt mit dem Kommando `docker-compose restart`.
+Mit `docker-compose up -d homeassistant` wird nun der Container gestartet, bzw. wenn er noch nicht da ist, herunter geladen.  
+Neustart von HomeAssistant erfolgt mit dem Kommando `docker-compose restart homeassistant`.
 
 ### Update auf neuere Version
 
+**Backup**: Zuerst mit rsync eine Kopie des Konfiguration-Vverzeichnisses erstellen und dieses mit tar _sichern_.
+
 ```
-docker pull homeassistant/raspberrypi3-homeassistant:0.100.2
-docker rmi homeassistant/raspberrypi3-homeassistant:stable
-docker tag <IMAGE ID> homeassistant/raspberrypi3-homeassistant:stable
+sudo rsync --archive -v /home/pi/docker/homeassistant /tmp/ha.rsync
+sudo tar cfvz /home/pi/ha.tar.gz /tmp/ha.rsync
+```
+
+```
+# Pull newest image. Takes a while to pull and extract
+nice -n 19 docker-compose pull homeassistant
+docker tag homeassistant/raspberrypi3-homeassistant:stable homeassistant/raspberrypi3-homeassistant:0.108.3
+docker rmi <old IMAGE ID>
 docker-compose stop homeassistant
 docker-compose up -d homeassistant
 ```
