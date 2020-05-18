@@ -75,7 +75,7 @@ sudo raspi-config
 ```
 
 Zum Menüpunkt **Interfacing Options** gehen;  anschließend zur Option **VNC** und dieses aktivieren.
-<img src="../images4git/activate-vnc.jpg" width="700">
+<img src="./images/activate-vnc.jpg" width="700">
 
 Den VNC-Viewer für MAC gibt es [hier](https://www.realvnc.com/en/connect/download/viewer).
 
