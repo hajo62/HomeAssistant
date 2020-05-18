@@ -21,7 +21,7 @@ LE Scan ...
 Anschließend muss man den Sensor noch bekannt machen, indem man in die Datei `sensors.yaml` folgenden Eintrag einfügt:
 ```
 - name: Hygrothermo_1
-  mac: '4C:65:A8:DD:FF:D3'
+  mac: '4C:65:A8:DD:xx:xx'
   scan_interval: 60
   monitored_conditions:
     - temperature
