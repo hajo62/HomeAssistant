@@ -4,7 +4,7 @@
 
 ## Installation mit docker
 
-Eine Beschreibung zur Installation von HomeAssistant-Docker-Containern findet sich [hier](https://www.home-assistant.io/docs/installation/docker/). Es wird davon ausgegangen, dass docker und docker-compose bereits installiert ist. Deshalb hier kurz die Installation von docker und docker-compose.
+Eine Beschreibung zur Installation von HomeAssistant-Docker-Containern findet sich [hier](https://www.home-assistant.io/docs/installation/docker/). Es wird davon ausgegangen, dass **docker** und **docker-compose** bereits installiert sind. Deshalb hier kurz die Installation von docker und docker-compose.
 
 ### Installation von docker und docker-compose
 #### docker
@@ -25,7 +25,7 @@ sudo pip3 install docker-compose
 docker run --init -d --name="home-assistant" -v /home/pi/homeassistant:/config -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/raspberrypi3-homeassistant
 ```
 
-Nach kurzer Zeit ist Home Assistant unter `http://192.168.178.111:8123` erreichbar.  
+Nach kurzer Zeit ist Home Assistant unter `http://192.168.178.112:8123` (lokale IP-Adresse des RPi) erreichbar.  
 <img src="images/HA_just_installed.jpg" width="300">
 
 ### docker-compose
@@ -50,23 +50,32 @@ Um nach dem booten oder nach einem Fehler HA automatisch neu zu starten, bietet 
       network_mode: host
 ```
 
-Mit `docker-compose up -d homeassistant` wird nun der Container gestartet, bzw. wenn er noch nicht da ist, herunter geladen.  
+Mit `docker-compose up [-d] homeassistant` wird nun der Container gestartet, bzw. wenn er noch nicht da ist, herunter geladen.  
 Neustart von HomeAssistant erfolgt mit dem Kommando `docker-compose restart homeassistant`.
 
 ### Update auf neuere Version
 
-**Backup**: Zuerst mit rsync eine Kopie des Konfiguration-Vverzeichnisses erstellen und dieses mit tar _sichern_.
+Da der Download und das entpacken der Images recht lang dauert, fange ich mit dem Download an. Anschließend stoppe ich HomeAssistant und erstelle mit `rsync` eine Kopie des Konfiguration-Verzeichnisses, um dieses mit tar zu sichern.
 
-```
-sudo rsync --archive -v /home/pi/docker/homeassistant /tmp/ha.rsync
-sudo tar cfvz /home/pi/ha.tar.gz /tmp/ha.rsync
-```
 
 ```
 # Pull newest image. Takes a while to pull and extract
 nice -n 19 docker-compose pull homeassistant
-docker tag homeassistant/raspberrypi3-homeassistant:stable homeassistant/raspberrypi3-homeassistant:0.108.3
-docker rmi <old IMAGE ID>
+
+# Stoppen von HomeAssistant
 docker-compose stop homeassistant
+
+# Backup
+sudo rsync --archive -v /home/pi/docker/homeassistant /tmp/ha.rsync
+sudo tar cfvz /home/pi/ha.tar.gz /tmp/ha.rsync
+
+# Starten der neuen Version
 docker-compose up -d homeassistant
+
+# Wenn alles okay ist...
+# Versions-Tag setzen
+docker tag homeassistant/raspberrypi3-homeassistant:stable homeassistant/raspberrypi3-homeassistant:0.108.3
+
+# Altes Image löschen
+docker rmi <old IMAGE ID>
 ```
