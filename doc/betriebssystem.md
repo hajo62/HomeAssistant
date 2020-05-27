@@ -92,6 +92,8 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab  # Swapfile permanent
 ```
 
 ### Zusätzliche Software-Pakete
+
+> Da ich auf docker _umgestiegen_ bin, bin ich nicht sicher, ob davon noch etwas benötigt wird. 
 #### node
 Ein Beschreibung findet sich z.B. [hier](https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/):
 ```
