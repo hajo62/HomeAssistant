@@ -1,5 +1,7 @@
 # MariaDB
 
+<img src="https://mariadb.org/wp-content/themes/twentynineteen-child/icons/logo_seal.svg" width="150" border="1">  
+
 Im [Forum](https://community.home-assistant.io/search?q=database%20lock%20) wird immer mal wieder empfohlen, statt der eingebauten Datenbank auf MariaDB zu wechseln. Da ich nun häufiger auch Datenbank-Locks im HomeAssistant-Log beobachtet habe, habe ich nun auf MariaDB auf docker umgestellt.  
 
 ## Installation
