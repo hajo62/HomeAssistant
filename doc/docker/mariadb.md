@@ -10,6 +10,7 @@ Aus diesem [Blog](https://www.wouterbulten.nl/blog/tech/home-automation-setup-do
 
 Hier der entsprechende Teil meiner `docker-compose.yaml`:  
 
+```
     mariadb:
       image: jsurf/rpi-mariadb
       container_name: mariadb
@@ -27,6 +28,29 @@ Hier der entsprechende Teil meiner `docker-compose.yaml`:
         - MYSQL_DATABASE=homeassistantdb
       ports:
         - 3306:3306
+````
+
+Oder besser die Kennworte in die Datei `.env` eintragen und hier referenzieren:
+
+```
+    mariadb:
+      image: jsurf/rpi-mariadb
+      container_name: mariadb
+      restart: unless-stopped
+      volumes:
+        - /home/pi/docker/mariadb:/var/lib/mysql
+        - /home/pi/docker/mariadb:/etc/mysql/conf.d
+      environment:
+        #- PUID=1000
+        #- GUID=1000
+        - TZ=Europe/Berlin
+        - MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD}"
+        - MYSQL_USER=pi
+        - MYSQL_PASSWORD="${MYSQL_PASSWORD}"
+        - MYSQL_DATABASE=homeassistantdb
+      ports:
+        - 3306:3306
+```
 
 Mit dem Kommando `docker-compose pull mariadb` wird das Image heruntergeladen und mit `docker-compose up [-d] mariadb` gestartet.
 
@@ -39,14 +63,17 @@ recorder:
 ...  
 ```
 
+Oder besser das `db_url` in die Datei `secrets.yaml` eintragen und hier referenzieren:
+```
+recorder:
+  db_url: !secret recorder_db_url
+```
+
 Nach dem Neustart des HomeAssistant-Containers wird die neue (leere) MariaDB genutzt. Die alte History wird nicht übertragen.
 
 ### Noch offen
 
 Die Datenbank _gehört_ dem Nutzer `homeassistant:spi`, obwohl ich oben `pi` angegeben habe? - Siehe [hier](https://community.home-assistant.io/t/mariadb-with-docker-compose-db-owner/202197)
-
-Die DB-url als Secret:  
-https://community.home-assistant.io/t/mariadb-on-docker-not-addon/184346
 
 ## Datenbank-Größe als SQL-Sensor
 
@@ -63,4 +90,6 @@ Um die Größe der Datenbank-Dateien zu bestimmen, wird [hier](https://community
         unit_of_measurement: MB
     scan_interval: 300              # Aktualisieren alle 5 Minuten
 ...
-```    
+```
+
+
