@@ -75,6 +75,8 @@ Nach dem Neustart des HomeAssistant-Containers wird die neue (leere) MariaDB gen
 
 Die Datenbank _gehört_ dem Nutzer `homeassistant:spi`, obwohl ich oben `pi` angegeben habe? - Siehe [hier](https://community.home-assistant.io/t/mariadb-with-docker-compose-db-owner/202197)
 
+Datenbank-url im sql-Sensor aus secret holen...
+
 ## Datenbank-Größe als SQL-Sensor
 
 Um die Größe der Datenbank-Dateien zu bestimmen, wird [hier](https://community.home-assistant.io/t/mariadb-size-almost-2gb-how-to-limit/156220/8) beschrieben, wie man dazu einen [SQL-Sensor](https://www.home-assistant.io/integrations/sql/) nutzen kann.
@@ -92,4 +94,4 @@ Um die Größe der Datenbank-Dateien zu bestimmen, wird [hier](https://community
 ...
 ```
 
-
+<img src="../images/sensors/sql-db-size.png" width="300" border="1">  
