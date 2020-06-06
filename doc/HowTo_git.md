@@ -2,10 +2,10 @@
 
 ## Repository anlegen und verbinden
 
-* Wechseln in das Verzeichnis, das versioniert werden soll. Dort dann eine initiale `.gitignore`-Datei mit folgendem Inhalt anlegen:  
+* Wechseln in das Verzeichnis, das versioniert werden soll. Dort dann eine initiale `.gitignore`-Datei mit folgendem Inhalt anlegen. Mit dieser gitignore-Datei wird sichergestellt, dass nicht versehentlich eine Datei gepublished wird.  
 
 ```
-# A /* ensures that everything will be ignored.
+# /* ensures that everything will be ignored.
 /*  
 # Now include files and/or directories
 !.gitignore
@@ -33,7 +33,7 @@ Um das Repository auf den Laptop zu clonen, wechselt man in das Verzeichnis, in 
 `git clone https://github.com/hajo62/HomeAssistant.git`  
 Hierdurch wird das Verzeichnis HomeAssistant angelegt und mit dem Inhalt aus github gefüllt.  
 
-### Auf dem Laptop bearbeiten
+### Dateien auf dem Laptop bearbeiten
 
 * Eine neue Datei in einem neuen Verzeichnis (z.B. `doc/HowTo_git.md`) anlegen.  
 *  Die Datei `.gitignore` anpassen, so dass die neuen Dateien dem Repository hinzugefügt werden. Dazu folgende Zeilen ergänzen:  
@@ -61,13 +61,15 @@ git push
 
 ## Änderungen auf dem RPi aus github holen
 
-Wenn ausschließlich auf dem Laptop geändert wurde, genügt das Kommando `git pull`, um die Änderungen von github auf den RPi zu übertragen.
+Wenn ausschließlich auf dem Laptop Dateien geändert wurde, genügt das Kommando `git pull`, um die Änderungen von github auf den RPi zu übertragen.
 
 ---
 
 ## git-secret
 
-Eine Beschreibung findet sich [hier](https://git-secret.io/installation). 
+Mit git-secret kann man Dateien mit sensitivem Inhalt verschlüsselt im git-Repo ablegen. Ich fand die Handhabung aber recht uständlich, so dass ich dies nach ersten Versuchen wieder eingestellt habe.  
+
+Eine Beschreibung zur git-secret findet sich [hier](https://git-secret.io/installation). 
 
 ### Erstellen eine RSA-Schlüsselpaar
 
