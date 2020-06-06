@@ -19,9 +19,12 @@
 !doc/fritzbox.md
 !doc/security.md
 !doc/sensors/xiaomi_bt_temp_humidity.md
+!doc/docker/mariadb.md
+
 
 # All images
-!images
+!doc/images
+!doc/images/*
 
 # Old "pre docker" documentation
 !doc/old
