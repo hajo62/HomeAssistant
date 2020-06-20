@@ -2,7 +2,7 @@
 
 ## Repository anlegen und verbinden
 
-* Wechseln in das Verzeichnis, das versioniert werden soll. Dort dann eine initiale `.gitignore`-Datei mit folgendem Inhalt anlegen. Mit dieser gitignore-Datei wird sichergestellt, dass nicht versehentlich eine Datei gepublished wird.  
+* Wechseln in das Verzeichnis, das versioniert werden soll. Dort dann eine initiale `.gitignore`-Datei mit folgendem Inhalt anlegen. Mit dieser gitignore-Datei wird sichergestellt, dass nicht versehentlich eine Datei gepublished wird, die _Geheimnisse_ enthält. Später werden dann alle Dateien oder Verzeichnisse einzeln wieder hinzugefügt.  
 
 ```
 # /* ensures that everything will be ignored.

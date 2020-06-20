@@ -4,6 +4,7 @@
 
 ## Installation mit docker
 
+<img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" width="150" border="1">   
 Eine Beschreibung zur Installation von HomeAssistant-Docker-Containern findet sich [hier](https://www.home-assistant.io/docs/installation/docker/). Es wird davon ausgegangen, dass **docker** und **docker-compose** bereits installiert sind. Deshalb hier kurz die Installation von docker und docker-compose.
 
 ### Installation von docker und docker-compose
