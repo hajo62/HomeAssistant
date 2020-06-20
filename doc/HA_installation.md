@@ -9,8 +9,10 @@ Eine Beschreibung zur Installation von HomeAssistant-Docker-Containern findet si
 ### Installation von docker und docker-compose
 #### docker
 
-<img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" width="150" border="1">  
+<img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" width="150" border="1">   
+
 Auf docker.com gibt es ein Skript zur Installation und zum Update von docker. Mit dem nachfolgenden Befehl läd man das Skript herunter und installiert docker. Der zweite Befehl ermöglicht, dass der User `pi` docker ausführen kann.
+
 ```
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
