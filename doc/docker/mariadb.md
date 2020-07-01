@@ -73,9 +73,15 @@ Nach dem Neustart des HomeAssistant-Containers wird die neue (leere) MariaDB gen
 
 ### Noch offen
 
+#### Datenbank Owner
+
 Die Datenbank _gehört_ dem Nutzer `homeassistant:spi`, obwohl ich oben `pi` angegeben habe? - Siehe [hier](https://community.home-assistant.io/t/mariadb-with-docker-compose-db-owner/202197)
 
 Datenbank-url im sql-Sensor aus secret holen...
+
+#### Backup der Datenbank
+
+Mein [restic-Backup](../old/doc/backup.md) sichert die Datenbank zwar mit weg. Da die Datenbank aber während der Sicherung aktiv ist, wird sie sich wohl eher nicht restoren lassen...
 
 ## Datenbank-Größe als SQL-Sensor
 
@@ -92,6 +98,12 @@ Um die Größe der Datenbank-Dateien zu bestimmen, wird [hier](https://community
         unit_of_measurement: MB
     scan_interval: 300              # Aktualisieren alle 5 Minuten
 ...
+```
+
+oder - wie oben - die `db_url` besser als secret.
+
+```
+    db_url: !secret recorder_db_url
 ```
 
 <img src="../images/sensors/sql-db-size.png" width="300" border="1">  
